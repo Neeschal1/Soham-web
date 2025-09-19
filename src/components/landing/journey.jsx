@@ -70,11 +70,11 @@ const Journey = () => {
             <div>
               <div className="w-full relative flex">
                 <input
-                  className="w-full h-13 border border-white rounded-full p-5 pr-32 text-white bg-transparent placeholder-white"
+                  className="w-full h-13 border border-white rounded-full p-5 pr-32 text-white bg-transparent placeholder-white "
                   type="email"
                   placeholder="Enter your email:"
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#00DADA] text-white px-5 py-2 rounded-full hover:bg-black transition">
+                <button style={Fonts.poppins.regular} className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#00DADA] text-white px-5 py-2 rounded-full hover:bg-black transition duration-800">
                   Get Started
                 </button>
               </div>

@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="flex-1 flex items-center justify-start ml-15">
           <div className="gap-5 flex flex-col">
             <div>
-              <h1 style={Fonts.poppins.medium} className="text-7xl text-white">
+              <h1 style={Fonts.poppins.medium} className=" text-2xl sm:text-3xl lg:text-5xl xl:text-7xl text-white ">
                 Meditation for mind, body,
                 <br />
                 and soul with silent strength.
