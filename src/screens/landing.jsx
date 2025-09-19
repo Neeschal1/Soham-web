@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../constant/navbar";
-import Hero from "../components/hero";
+import Hero from "../components/landing/hero";
 import Footer from "../constant/footer";
-import Moreaboutus from "../components/more_about_us";
+import Moreaboutus from "../components/landing/more_about_us";
+import Journey from "../components/landing/journey";
 
 const Landing = () => {
   return (
@@ -10,6 +10,7 @@ const Landing = () => {
       <div>
         <Hero />
         <Moreaboutus />
+        <Journey />
         <Footer />
       </div>
     </>

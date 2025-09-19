@@ -1,5 +1,5 @@
 import React from "react";
-import Fonts from "../utils/fontsconfig";
+import Fonts from "../../utils/fontsconfig";
 
 const Moreaboutus = () => {
   return (
@@ -15,7 +15,6 @@ const Moreaboutus = () => {
                 style={Fonts.poppins.regular}
                 className="font-poppins font-medium text-black/20"
               >
-                {" "}
                 Soham
               </h3>
             </div>
