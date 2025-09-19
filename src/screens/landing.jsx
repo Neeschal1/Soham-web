@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../constant/navbar";
+import Hero from "../components/hero";
+import Footer from "../constant/footer";
 
 const Landing = () => {
   return (
-    <div>Landing</div>
-  )
-}
+    <>
+      <div>
+        <Navbar />
+        <Hero />
+        <Footer />
+      </div>
+    </>
+  );
+};
 
-export default Landing
+export default Landing;
