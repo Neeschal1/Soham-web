@@ -2,8 +2,31 @@ import React, { useState } from "react";
 import Fonts from "../../utils/fontsconfig";
 import Detailcard from "../../assets/images/detail_card.png";
 import { LuArrowUpRight } from "react-icons/lu";
+import Silence from "../../assets/images/silence.jpg";
+import Happy from "../../assets/images/happy.jpg";
 
 const buttonoptions = ["Meditation", "Yoga", "Relax"];
+
+const journey_options = [
+  {
+    id: "1",
+    image: Silence,
+    title: (
+      <>
+        Embrace the <br /> silence
+      </>
+    ),
+    subtitle:
+      "Whether you're looking to manage stress, improve focus or simply find moments.",
+  },
+  {
+    id: "2",
+    image: Happy,
+    title: "Celebrate the present moment",
+    subtitle:
+      "From letting go of worries to building focus, or simply enjoying the moment.",
+  },
+];
 
 const Journey = () => {
   const [btn, setbtn] = useState("Meditation");
@@ -44,41 +67,80 @@ const Journey = () => {
             </div>
           </div>
         </div>
-        <div
-          className="w-5/12 h-190 rounded-4xl flex flex-col p-6 items-center justify-between"
-          style={{ backgroundImage: `url(${Detailcard})` }}
-        >
-          <div className="flex w-full flex-row items-center justify-between">
-            <button
-              className="bg-[#FFFFFF] py-3 px-4 rounded-full"
-              style={Fonts.poppins.regular}
-            >
-              Check full details
-            </button>
-            <div className="bg-white rounded-full py-3 px-3">
-              <LuArrowUpRight size={20} />
-            </div>
-          </div>
-          <div className="w-full flex flex-col gap-4">
-            <div>
-              <h2 style={Fonts.poppins.regular} className="text-white">
-                Together, lets journey towards the life of greater presence,
-                peace and
-                <br /> well-being.
-              </h2>
-            </div>
-            <div>
-              <div className="w-full relative flex">
-                <input
-                  className="w-full h-13 border border-white rounded-full p-5 pr-32 text-white bg-transparent placeholder-white "
-                  type="email"
-                  placeholder="Enter your email:"
-                />
-                <button style={Fonts.poppins.regular} className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#00DADA] text-white px-5 py-2 rounded-full hover:bg-black transition duration-800">
-                  Get Started
-                </button>
+        <div className="flex flex-row items-center justify-between gap-10">
+          <div
+            className="w-6/12 h-190 rounded-4xl flex flex-col p-6 items-center justify-between "
+            style={{ backgroundImage: `url(${Detailcard})` }}
+          >
+            <div className="flex w-full flex-row items-center justify-between">
+              <button
+                className="bg-[#FFFFFF] py-3 px-4 rounded-full"
+                style={Fonts.poppins.regular}
+              >
+                Check full details
+              </button>
+              <div className="bg-white rounded-full py-3 px-3">
+                <LuArrowUpRight size={20} />
               </div>
             </div>
+            <div className="w-full flex flex-col gap-4">
+              <div>
+                <h2
+                  style={Fonts.poppins.regular}
+                  className="text-white text-xl"
+                >
+                  Together, lets journey towards the life of greater presence,
+                  peace and well-being.
+                </h2>
+              </div>
+              <div>
+                <div className="w-full relative flex">
+                  <input
+                    className="w-full h-13 border border-white rounded-full p-5 pr-32 text-white bg-transparent placeholder-white "
+                    type="email"
+                    placeholder="Enter your email:"
+                  />
+                  <button
+                    style={Fonts.poppins.regular}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#00DADA] text-white px-5 py-2 rounded-full hover:bg-black transition duration-800"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-6/12 gap-10">
+            {journey_options.map((items) => (
+              <div className="h-90 w-full rounded-3xl bg-[#F2F2F2]">
+                <div className="flex flex-row justify-between">
+                  <div className="flex flex-col items-start p-5 gap-5">
+                    <div className="flex flex-row justify-center items-center">
+                      <div>
+                        <button
+                          style={Fonts.poppins.regular}
+                          className="bg-white py-3 px-3 rounded-full"
+                        >
+                          Discover more
+                        </button>
+                      </div>
+                      <div className="bg-white py-3 px-3 rounded-full">
+                        <LuArrowUpRight size={20} />
+                      </div>
+                    </div>
+                    <div className="gap-4 flex flex-col">
+                      <h1 style={Fonts.poppins.medium} className="text-4xl">
+                        {items.title}
+                      </h1>
+                      <h3 className="text-l" style={Fonts.poppins.regular}>
+                        {items.subtitle}
+                      </h3>
+                    </div>
+                  </div>
+                  <img className="h-90 w-6/12 rounded-3xl" src={items.image} />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
