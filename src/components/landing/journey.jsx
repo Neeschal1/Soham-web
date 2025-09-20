@@ -32,7 +32,7 @@ const Journey = () => {
   const [btn, setbtn] = useState("Meditation");
   return (
     <>
-      <div className="flex flex-1 w-full p-10 flex-col gap-10 py-30">
+      <div className="flex flex-1 w-full p-10 flex-col gap-10 py-30 mb-10">
         <div className="flex flex-col w-full gap-3">
           <div className="flex">
             <h3
@@ -69,7 +69,7 @@ const Journey = () => {
         </div>
         <div className="flex flex-row items-center justify-between gap-10">
           <div
-            className="w-6/12 h-190 rounded-4xl flex flex-col p-6 items-center justify-between "
+            className="w-6/12 h-190 rounded-4xl flex flex-col p-6 items-center justify-between object-cover"
             style={{ backgroundImage: `url(${Detailcard})` }}
           >
             <div className="flex w-full flex-row items-center justify-between">
@@ -129,15 +129,15 @@ const Journey = () => {
                       </div>
                     </div>
                     <div className="gap-4 flex flex-col">
-                      <h1 style={Fonts.poppins.medium} className="text-4xl">
+                      <h1 style={Fonts.poppins.medium} className="text-3xl">
                         {items.title}
                       </h1>
-                      <h3 className="text-l" style={Fonts.poppins.regular}>
+                      <h3 style={Fonts.poppins.regular}>
                         {items.subtitle}
                       </h3>
                     </div>
                   </div>
-                  <img className="h-90 w-6/12 rounded-3xl" src={items.image} />
+                  <img className="h-90 w-6/12 rounded-3xl object-cover" src={items.image} />
                 </div>
               </div>
             ))}
