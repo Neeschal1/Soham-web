@@ -112,7 +112,7 @@ const Journey = () => {
           </div>
           <div className="flex flex-col w-6/12 gap-10">
             {journey_options.map((items) => (
-              <div className="h-90 w-full rounded-3xl bg-[#F2F2F2]">
+              <div key={items.id} className="h-90 w-full rounded-3xl bg-[#F2F2F2]">
                 <div className="flex flex-row justify-between">
                   <div className="flex flex-col items-start p-5 gap-5">
                     <div className="flex flex-row justify-center items-center">

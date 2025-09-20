@@ -4,6 +4,7 @@ import Footer from "../constant/footer";
 import Moreaboutus from "../components/landing/more_about_us";
 import Journey from "../components/landing/journey";
 import Download from "../components/landing/download_our_app";
+import Faqs from "../components/landing/faqs";
 
 const Landing = () => {
   return (
@@ -12,7 +13,8 @@ const Landing = () => {
         <Hero />
         <Moreaboutus />
         <Journey />
-        {/* <Download /> */}
+        <Download />
+        <Faqs />
         <Footer />
       </div>
     </>
