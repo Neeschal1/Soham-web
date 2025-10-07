@@ -5,6 +5,8 @@ import Moreaboutus from "../components/landing/more_about_us";
 import Journey from "../components/landing/journey";
 import Download from "../components/landing/download_our_app";
 import Faqs from "../components/landing/faqs";
+import Instructors from "../components/landing/instructors";
+import Reflection from "../components/landing/reflection";
 
 const Landing = () => {
   return (
@@ -14,7 +16,9 @@ const Landing = () => {
         <Moreaboutus />
         <Journey />
         <Download />
-        <Faqs />
+        <Reflection />
+        <Instructors />
+        {/* <Faqs /> */}
         <Footer />
       </div>
     </>
