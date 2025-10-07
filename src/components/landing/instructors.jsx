@@ -33,7 +33,7 @@ const instructor_detail = [
 const Instructors = () => {
   return (
     <>
-      <div className="flex flex-1 flex-col justify-center items-center w-full p-10">
+      <div className="flex flex-1 flex-col justify-center items-center w-full p-10 mt-10">
         {/* Instructor's content */}
         <div className="flex flex-col gap-6 justify-center w-full items-center">
           <div className="flex">
