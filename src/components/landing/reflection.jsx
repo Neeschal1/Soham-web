@@ -27,7 +27,7 @@ const Reflection = () => {
 
         <div className="flex justify-center mb-10">
           <div
-            className="w-[300px] h-[300px] bg-cover bg-center rounded-2xl"
+            className="w-[500px] h-[500px] bg-cover bg-center rounded-2xl"
             style={{ backgroundImage: `url(${Reflectionimg})` }}
           />
         </div>
