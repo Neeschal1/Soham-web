@@ -73,7 +73,7 @@ const Journey = () => {
   return (
     <div className="w-full flex flex-col gap-10 p-5 md:p-10">
       {/* -------------------- Desktop / Large Screens -------------------- */}
-      <div className="hidden lg:flex flex-col gap-10 mt-20 mb-20">
+      <div className="lg:flex flex-col gap-10 mt-20 mb-20">
         {/* Heading + Buttons */}
         <div className="flex justify-center items-center w-full">
           <div className="flex flex-1 flex-row gap-4 justify-center items-center">
