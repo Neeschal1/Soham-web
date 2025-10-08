@@ -152,7 +152,7 @@ const Instructors = () => {
           of experience, passion, and knowledge to help you grow and learn.
         </p>
 
-        <div className="grid grid-cols-3 gap-6 justify-items-center">
+        <div className="grid grid-cols-3 gap-10 justify-items-center">
           {instructor_detail.map((item) => (
             <div
               key={item.id}
@@ -179,13 +179,15 @@ const Instructors = () => {
       </div>
 
       {/* ----------- DESKTOP VIEW (≥1280px) ----------- */}
-      <div className="hidden lg:block px-20 py-14 text-center">
-        <h3
+      <div className="flex flex-1 lg:block px-20 py-14 text-center items-center">
+        <div className="flex flex-1 items-center justify-center">
+          <h3
           className="bg-[#F9F8FF] py-2 px-12 rounded-full text-lg"
           style={Fonts.poppins.regular}
         >
           OUR PEDAGOGUE
         </h3>
+        </div>
 
         <h1
           style={Fonts.poppins.medium}
@@ -201,7 +203,7 @@ const Instructors = () => {
           of experience, passion, and knowledge to help you grow and learn.
         </p>
 
-        <div className="grid grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-3 gap-25 justify-items-center">
           {instructor_detail.map((item) => (
             <div
               key={item.id}
