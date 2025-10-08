@@ -62,16 +62,16 @@ const Faqs = () => {
   return (
     <div
       ref={scrollRef}
-      className={`flex flex-col md:flex-row mb-20 items-center justify-between gap-15  lg:px-20 bg-white transition-all duration-700 ${
+      className={`flex flex-col md:flex-row mb-20 items-center justify-between gap-15  lg:p-10 p-5 bg-white transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
       {/* LEFT SIDE - Heading + Image */}
       <div className=" w-full md:w-6/12 flex flex-col items-start gap-8">
         {/* Heading Section */}
-        <div className="lg:flex lg:flex-col lg:gap-3 lg:w-full lg:items-start sm:items-center">
+        <div className="lg:flex lg:flex-col lg:gap-3 lg:w-full lg:items-start flex flex-col items-center justify-center">
           <h3
-            className="bg-[#F9F8FF] py-2 px-4 rounded-full w-fit"
+            className="bg-[#F9F8FF] py-2 px-4 rounded-full lg:w-fit text-center"
             style={Fonts.poppins.regular}
           >
             FREQUENTLY ASKED QUESTIONS
@@ -79,13 +79,13 @@ const Faqs = () => {
 
           <h1
             style={Fonts.poppins.medium}
-            className="text-3xl lg:text-4xl font-bold text-black"
+            className="text-3xl lg:text-4xl font-bold text-black lg:text-start text-center"
           >
-            Find clarity through <br /> your meditation journey
+            Find clarity through your meditation journey
           </h1>
 
           <p
-            className="text-gray-600 mt-2 max-w-md"
+            className="text-gray-600 mt-2 max-w-md lg:text-start text-center"
             style={Fonts.poppins.regular}
           >
             Explore common questions people have when beginning their meditation
@@ -94,7 +94,7 @@ const Faqs = () => {
         </div>
 
         {/* Image Below Heading */}
-        <div className="w-full flex justify-center items-center ">
+        <div className="lg:w-full lg:flex justify-center items-center hidden">
           <img
             src={Faqimg}
             alt="FAQ Illustration"
