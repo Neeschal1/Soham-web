@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Fonts from "../../utils/fontsconfig";
-import Detailcard from "../../assets/images/detail_card.png";
+import Detailcard from "../../assets/images/servicesimg.jpg";
 import { LuArrowUpRight } from "react-icons/lu";
 import Silence from "../../assets/images/silence.jpg";
 import Happy from "../../assets/images/happy.jpg";
