@@ -32,14 +32,12 @@ const journey_options = [
 const Journey = () => {
   const [btn, setbtn] = useState("Meditation");
 
-  // Visibility states for animations
   const detailRef = useRef(null);
   const [detailVisible, setDetailVisible] = useState(false);
 
   const cardsRef = useRef(null);
   const [cardsVisible, setCardsVisible] = useState(false);
 
-  // Intersection Observer for Detail Card
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -56,7 +54,6 @@ const Journey = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Intersection Observer for Journey Cards
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -75,7 +72,7 @@ const Journey = () => {
 
   return (
     <div className="w-full flex flex-col gap-10 p-5 md:p-10">
-      {/* Desktop / Large Screens */}
+      {/* -------------------- Desktop / Large Screens -------------------- */}
       <div className="hidden lg:flex flex-col gap-10 mt-20 mb-20">
         {/* Heading + Buttons */}
         <div className="flex justify-center items-center w-full">
@@ -91,7 +88,7 @@ const Journey = () => {
                 Start your Journey <br /> today
               </h1>
             </div>
-            <div className="flex flex-1 gap-4  justify-end">
+            <div className="flex flex-1 gap-4 justify-end">
               {buttonoptions.map((items) => (
                 <button
                   style={Fonts.poppins.regular}
@@ -99,7 +96,7 @@ const Journey = () => {
                   onClick={() => setbtn(items)}
                   className={`text-l font-poppins rounded-3xl px-8 py-3 transition-colors duration-800 ${
                     btn === items
-                      ? "bg-[#000000] text-white"
+                      ? "bg-black text-white"
                       : "border border-[#989898] text-black hover:bg-black hover:text-white"
                   }`}
                 >
@@ -110,8 +107,8 @@ const Journey = () => {
           </div>
         </div>
 
-        {/* Detail Card Section */}
-        <div className="lg:flex lg:flex-row lg:gap-10">
+        {/* Detail Card */}
+        <div className="flex flex-row gap-10">
           <div
             ref={detailRef}
             className={`w-9/12 h-150 rounded-4xl flex flex-col p-6 items-center justify-between object-cover transition-all duration-700 ${
@@ -127,7 +124,7 @@ const Journey = () => {
           >
             <div className="flex w-full flex-row items-center justify-between">
               <button
-                className="bg-[#FFFFFF] py-3 px-4 rounded-full"
+                className="bg-white py-3 px-4 rounded-full"
                 style={Fonts.poppins.regular}
               >
                 Check full details
@@ -160,7 +157,7 @@ const Journey = () => {
             </div>
           </div>
 
-          {/* Journey Cards Section */}
+          {/* Journey Cards */}
           <div
             ref={cardsRef}
             className={`flex flex-col gap-6 transition-all duration-700 ${
@@ -199,7 +196,7 @@ const Journey = () => {
         </div>
       </div>
 
-      {/* Tablet Screens */}
+      {/* -------------------- Tablet Screens -------------------- */}
       <div className="hidden md:flex lg:hidden flex-col gap-8">
         {/* Heading + Buttons */}
         <div className="flex flex-col items-center text-center gap-4">
@@ -220,7 +217,7 @@ const Journey = () => {
                 onClick={() => setbtn(items)}
                 className={`text-l font-poppins rounded-3xl px-6 py-3 transition-colors duration-800 ${
                   btn === items
-                    ? "bg-[#000000] text-white"
+                    ? "bg-black text-white"
                     : "border border-[#989898] text-black hover:bg-black hover:text-white"
                 }`}
               >
@@ -246,7 +243,7 @@ const Journey = () => {
         >
           <div className="flex w-full flex-row items-center justify-between">
             <button
-              className="bg-[#FFFFFF] py-3 px-4 rounded-full"
+              className="bg-white py-3 px-4 rounded-full"
               style={Fonts.poppins.regular}
             >
               Check full details
@@ -317,7 +314,7 @@ const Journey = () => {
         </div>
       </div>
 
-      {/* Mobile Screens */}
+      {/* -------------------- Mobile Screens -------------------- */}
       <div className="flex flex-col md:hidden gap-6 mt-20 mb-20">
         {/* Heading + Buttons */}
         <div className="flex flex-col items-center text-center gap-3">
@@ -338,7 +335,7 @@ const Journey = () => {
                 onClick={() => setbtn(items)}
                 className={`text-sm font-poppins justify-between rounded-3xl px-6 py-3 transition-colors duration-800 ${
                   btn === items
-                    ? "bg-[#000000] text-white"
+                    ? "bg-black text-white"
                     : "border border-[#989898] text-black hover:bg-black hover:text-white"
                 }`}
               >
@@ -364,7 +361,7 @@ const Journey = () => {
         >
           <div className="flex w-full flex-row items-center justify-between">
             <button
-              className="bg-[#FFFFFF] py-3 px-4 rounded-full"
+              className="bg-white py-3 px-4 rounded-full"
               style={Fonts.poppins.regular}
             >
               Check full details
