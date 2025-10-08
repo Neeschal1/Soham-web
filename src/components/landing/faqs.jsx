@@ -69,7 +69,7 @@ const Faqs = () => {
       {/* LEFT SIDE - Heading + Image */}
       <div className=" w-full md:w-6/12 flex flex-col items-start gap-8">
         {/* Heading Section */}
-        <div className="lg:flex lg:flex-col lg:gap-3 lg:w-full lg:items-start flex flex-col items-center justify-center">
+        <div className="lg:flex lg:flex-col lg:gap-3 lg:w-full lg:items-start flex flex-col items-center justify-center gap-5">
           <h3
             className="bg-[#F9F8FF] py-2 px-4 rounded-full lg:w-fit text-center"
             style={Fonts.poppins.regular}
@@ -77,7 +77,8 @@ const Faqs = () => {
             FREQUENTLY ASKED QUESTIONS
           </h3>
 
-          <h1
+          <div>
+            <h1
             style={Fonts.poppins.medium}
             className="text-3xl lg:text-4xl font-bold text-black lg:text-start text-center"
           >
@@ -91,6 +92,7 @@ const Faqs = () => {
             Explore common questions people have when beginning their meditation
             practice and discover how it can transform your life.
           </p>
+          </div>
         </div>
 
         {/* Image Below Heading */}
