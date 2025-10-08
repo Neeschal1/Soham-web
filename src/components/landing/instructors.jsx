@@ -171,7 +171,7 @@ const Instructors = () => {
         <h1 style={Fonts.poppins.medium} className="text-5xl mt-4 mb-2">
           Meet our Expert Instructor
         </h1>
-        <p style={Fonts.poppins.light} className="text-lg text-gray-600 mb-10">
+        <p style={Fonts.poppins.regular} className="text-gray-600 mt-2 mb-10">
           Discover the experts guiding your journey. Our instructors bring years
           of experience, passion, and knowledge to help you grow and learn.
         </p>
