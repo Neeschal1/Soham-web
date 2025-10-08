@@ -4,6 +4,8 @@ import Reflectionimg from "../../assets/images/reflection.png";
 import { GrUserExpert } from "react-icons/gr";
 import { GiMeditation } from "react-icons/gi";
 import { RiUserCommunityFill } from "react-icons/ri";
+import { PiWaveform } from "react-icons/pi";
+import { FaPlay } from "react-icons/fa";
 
 const Reflection = () => {
   return (
@@ -29,9 +31,21 @@ const Reflection = () => {
 
         <div className="flex justify-center mb-10">
           <div
-            className="w-[500px] h-[500px] bg-cover bg-center rounded-2xl"
+            className="flex w-[500px] h-[500px] bg-cover bg-center rounded-2xl justify-end items-end overflow-hidden"
             style={{ backgroundImage: `url(${Reflectionimg})` }}
-          />
+          >
+            <div className="w-full flex-col gap-3 flex h-30 justify-center items-center p-5 bg-white/20 backdrop-blur-2xl rounded-b-2xl">
+              <h1 style={Fonts.poppins.medium} className="text-2xl text-white">
+                View Playlists
+              </h1>
+              <div className="flex flex-row items-center gap-5 justify-center">
+                <PiWaveform size={40} color="white" />
+                <button className="flex p-3 items-center justify-center rounded-full bg-white">
+                  <FaPlay />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Details */}
