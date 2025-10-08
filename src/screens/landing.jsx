@@ -15,11 +15,11 @@ const Landing = () => {
         <Hero />
         <Moreaboutus />
         <div className="flex flex-col gap-10">
-          <Journey />
-        <Download />
-        <Reflection />
-        <Instructors />
-        {/* <Faqs /> */}
+          {/* <Journey /> */}
+          <Download />
+          <Reflection />
+          <Instructors />
+          {/* <Faqs /> */}
         </div>
         <Footer />
       </div>

@@ -1,52 +1,114 @@
 import React from "react";
 import Fonts from "../../utils/fontsconfig";
 
-const Moreaboutus = () => {
+const MoreAboutUs = () => {
   return (
-    <>
-      <div className="items-center justify-center flex flex-1 flex-col bg-[#F2F1FF] py-30">
-        <div className="flex flex-col gap-8 items-center justify-center">
-          <div className="flex gap-3 flex-col">
-            <div className="flex flex-row items-center gap-3 justify-center">
-              <h1 className="text-2xl font-poppins font-medium text-black/20">
-                •
-              </h1>
-              <h3
-                style={Fonts.poppins.regular}
-                className="font-poppins font-medium text-black/20"
-              >
+    <div className="w-full">
+      {/* ----------- MOBILE VIEW (below 640px) ----------- */}
+      <div className="block sm:hidden flex-col items-center justify-center bg-[#F2F1FF] py-12 px-4 text-center">
+        <div className="flex flex-col gap-6 items-center justify-center">
+          <div className="flex flex-col gap-2 items-center">
+            <div className="flex items-center gap-2 justify-center">
+              <h1 className="text-xl font-poppins font-medium text-black/20">•</h1>
+              <h3 style={Fonts.poppins.regular} className="text-sm text-black/20">
                 Soham
               </h3>
             </div>
-            <div>
-              <h1
-                style={Fonts.poppins.medium}
-                className="text-center text-4xl font-poppins font-medium"
-              >
-                Combining mindful practices to help users
-                <br /> stay calm, focused, and balanced—
-                <br />
-                anytime, anywhere.
-              </h1>
-              <h3
-                className="text-[#7D7D7D] text-center"
-                style={Fonts.poppins.regular}
-              >
-                We provide instant access to guided meditation and mindful
-                practices with tools for relaxation, stress
-                <br /> relief, and daily well-being
-              </h3>
-            </div>
+            <h1 style={Fonts.poppins.medium} className="text-2xl font-medium">
+              Combining mindful practices to help users
+              <br /> stay calm, focused, and balanced—
+              <br /> anytime, anywhere.
+            </h1>
+            <h3 style={Fonts.poppins.regular} className="text-sm text-[#7D7D7D]">
+              We provide instant access to guided meditation and mindful
+              <br /> practices with tools for relaxation, stress relief, and daily well-being
+            </h3>
           </div>
-          <div>
-            <button className="bg-[#00DADA] py-4 px-10 rounded text-xl text-white hover:bg-black duration-800">
-              More about us
-            </button>
-          </div>
+          <button className="bg-[#00DADA] py-3 px-6 rounded text-base text-white hover:bg-black duration-800">
+            More about us
+          </button>
         </div>
       </div>
-    </>
+
+      {/* ----------- TABLET VIEW (640px – 1023px) ----------- */}
+      <div className="hidden sm:flex md:hidden flex-col items-center justify-center bg-[#F2F1FF] py-16 px-8 text-center">
+        <div className="flex flex-col gap-8 items-center justify-center">
+          <div className="flex flex-col gap-3 items-center">
+            <div className="flex items-center gap-3 justify-center">
+              <h1 className="text-2xl font-poppins font-medium text-black/20">•</h1>
+              <h3 style={Fonts.poppins.regular} className="text-base text-black/20">
+                Soham
+              </h3>
+            </div>
+            <h1 style={Fonts.poppins.medium} className="text-3xl font-medium">
+              Combining mindful practices to help users
+              <br /> stay calm, focused, and balanced—
+              <br /> anytime, anywhere.
+            </h1>
+            <h3 style={Fonts.poppins.regular} className="text-base text-[#7D7D7D]">
+              We provide instant access to guided meditation and mindful
+              <br /> practices with tools for relaxation, stress relief, and daily well-being
+            </h3>
+          </div>
+          <button className="bg-[#00DADA] py-4 px-8 rounded text-lg text-white hover:bg-black duration-800">
+            More about us
+          </button>
+        </div>
+      </div>
+
+      {/* ----------- LAPTOP VIEW (1024px – 1279px) ----------- */}
+      <div className="hidden md:flex lg:hidden flex-col items-center justify-center bg-[#F2F1FF] py-20 px-12 text-center">
+        <div className="flex flex-col gap-10 items-center">
+          <div className="flex flex-col gap-4 items-center">
+            <div className="flex items-center gap-4 justify-center">
+              <h1 className="text-2xl font-poppins font-medium text-black/20">•</h1>
+              <h3 style={Fonts.poppins.regular} className="text-lg text-black/20">
+                Soham
+              </h3>
+            </div>
+            <h1 style={Fonts.poppins.medium} className="text-4xl font-medium">
+              Combining mindful practices to help users
+              <br /> stay calm, focused, and balanced—
+              <br /> anytime, anywhere.
+            </h1>
+            <h3 style={Fonts.poppins.regular} className="text-lg text-[#7D7D7D]">
+              We provide instant access to guided meditation and mindful
+              <br /> practices with tools for relaxation, stress relief, and daily well-being
+            </h3>
+          </div>
+          <button className="bg-[#00DADA] py-4 px-10 rounded text-xl text-white hover:bg-black duration-800">
+            More about us
+          </button>
+        </div>
+      </div>
+
+      {/* ----------- DESKTOP VIEW (≥1280px) ----------- */}
+      <div className="hidden lg:flex flex-col items-center justify-center bg-[#F2F1FF] py-30 px-20 text-center">
+        <div className="flex flex-col gap-12 items-center">
+          <div className="flex flex-col gap-6 items-center">
+            <div className="flex items-center gap-6 justify-center">
+              <h1 className="text-2xl font-poppins font-medium text-black/20">•</h1>
+              <h3 style={Fonts.poppins.regular} className="text-lg text-black/20">
+                Soham
+              </h3>
+            </div>
+            <h1 style={Fonts.poppins.medium} className="text-4xl font-medium">
+              Combining mindful practices to help users
+              <br /> stay calm, focused, and balanced—
+              <br /> anytime, anywhere.
+            </h1>
+            <h3 style={Fonts.poppins.regular} className="text-lg text-[#7D7D7D]">
+              We provide instant access to guided meditation and mindful
+              <br /> practices with tools for relaxation, stress relief, and daily well-being
+            </h3>
+          </div>
+          <button className="bg-[#00DADA] py-4 px-12 rounded text-xl text-white hover:bg-black duration-800">
+            More about us
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Moreaboutus;
+export default MoreAboutUs;
