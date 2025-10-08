@@ -158,16 +158,24 @@ const Footer = () => {
           </p>
 
           {/* Developer Credit */}
-          <p style={Fonts.poppins.regular} className="text-white">
-            Designed and Developed with ❤️ by{" "}
+          <p style={Fonts.poppins.medium} className="text-center text-[#ffffff]">
+            Designed with ❤️ by{" "}
             <a
-              style={Fonts.poppins.medium}
-              href="https://www.facebook.com/nischal.pokharel.598234"
+              href="https://www.facebook.com/nischal.pokharel.598234" 
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-[16px] hover:underline"
             >
               Nischal Pokharel
+            </a>{" "}
+            &{" "}
+            <a
+              href="https://www.facebook.com/aca.ssh.9" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-[16px] hover:underline"
+            >
+              Aashish Ghimire
             </a>
           </p>
 
