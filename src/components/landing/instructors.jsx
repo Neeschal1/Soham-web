@@ -32,24 +32,20 @@ const Instructors = () => {
   return (
     <div className="w-full mt-10">
       {/* ----------- MOBILE VIEW (below 640px) ----------- */}
-      <div className="block sm:hidden px-4 py-8 text-center">
-        <h3
-          className="bg-[#F9F8FF] py-2 px-6 rounded-full text-sm"
-          style={Fonts.poppins.regular}
-        >
-          OUR PEDAGOGUE
-        </h3>
+      <div className="block items-center w-full justify-center flex-col sm:hidden px-4 py-8 text-center">
+        <div className="flex justify-center">
+          <h3
+            className="bg-[#F9F8FF] py-2 px-6 rounded-full text-sm"
+            style={Fonts.poppins.regular}
+          >
+            OUR PEDAGOGUE
+          </h3>
+        </div>
 
-        <h1
-          style={Fonts.poppins.medium}
-          className="text-2xl mt-4 mb-2"
-        >
+        <h1 style={Fonts.poppins.medium} className="text-2xl mt-4 mb-2">
           Meet our Expert Instructor
         </h1>
-        <p
-          style={Fonts.poppins.light}
-          className="text-sm text-gray-600 mb-8"
-        >
+        <p style={Fonts.poppins.light} className="text-sm text-gray-600 mb-8">
           Discover the experts guiding your journey. Our instructors bring years
           of experience, passion, and knowledge to help you grow and learn.
         </p>
@@ -62,10 +58,7 @@ const Instructors = () => {
               className="relative w-full h-[400px] rounded-xl bg-cover bg-center overflow-hidden hover:scale-105 transition-transform duration-500"
             >
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
-                <h1
-                  style={Fonts.poppins.medium}
-                  className="text-white text-lg"
-                >
+                <h1 style={Fonts.poppins.medium} className="text-white text-lg">
                   {item.name}
                 </h1>
                 <h3
@@ -89,16 +82,10 @@ const Instructors = () => {
           OUR PEDAGOGUE
         </h3>
 
-        <h1
-          style={Fonts.poppins.medium}
-          className="text-3xl mt-4 mb-2"
-        >
+        <h1 style={Fonts.poppins.medium} className="text-3xl mt-4 mb-2">
           Meet our Expert Instructor
         </h1>
-        <p
-          style={Fonts.poppins.light}
-          className="text-base text-gray-600 mb-8"
-        >
+        <p style={Fonts.poppins.light} className="text-base text-gray-600 mb-8">
           Discover the experts guiding your journey. Our instructors bring years
           of experience, passion, and knowledge to help you grow and learn.
         </p>
@@ -111,10 +98,7 @@ const Instructors = () => {
               className="relative w-[300px] h-[480px] rounded-xl bg-cover bg-center overflow-hidden hover:scale-105 transition-transform duration-500"
             >
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
-                <h1
-                  style={Fonts.poppins.medium}
-                  className="text-white text-xl"
-                >
+                <h1 style={Fonts.poppins.medium} className="text-white text-xl">
                   {item.name}
                 </h1>
                 <h3
@@ -138,16 +122,10 @@ const Instructors = () => {
           OUR PEDAGOGUE
         </h3>
 
-        <h1
-          style={Fonts.poppins.medium}
-          className="text-4xl mt-4 mb-2"
-        >
+        <h1 style={Fonts.poppins.medium} className="text-4xl mt-4 mb-2">
           Meet our Expert Instructor
         </h1>
-        <p
-          style={Fonts.poppins.light}
-          className="text-lg text-gray-600 mb-10"
-        >
+        <p style={Fonts.poppins.light} className="text-lg text-gray-600 mb-10">
           Discover the experts guiding your journey. Our instructors bring years
           of experience, passion, and knowledge to help you grow and learn.
         </p>
@@ -179,26 +157,21 @@ const Instructors = () => {
       </div>
 
       {/* ----------- DESKTOP VIEW (≥1280px) ----------- */}
-      <div className="flex flex-1 lg:block px-20 py-14 text-center items-center">
+      <div className="hidden lg:block px-20 py-14 text-center items-center">
+
         <div className="flex flex-1 items-center justify-center">
           <h3
-          className="bg-[#F9F8FF] py-2 px-12 rounded-full text-lg"
-          style={Fonts.poppins.regular}
-        >
-          OUR PEDAGOGUE
-        </h3>
+            className="bg-[#F9F8FF] py-2 px-12 rounded-full text-lg"
+            style={Fonts.poppins.regular}
+          >
+            OUR PEDAGOGUE
+          </h3>
         </div>
 
-        <h1
-          style={Fonts.poppins.medium}
-          className="text-5xl mt-4 mb-2"
-        >
+        <h1 style={Fonts.poppins.medium} className="text-5xl mt-4 mb-2">
           Meet our Expert Instructor
         </h1>
-        <p
-          style={Fonts.poppins.light}
-          className="text-lg text-gray-600 mb-10"
-        >
+        <p style={Fonts.poppins.light} className="text-lg text-gray-600 mb-10">
           Discover the experts guiding your journey. Our instructors bring years
           of experience, passion, and knowledge to help you grow and learn.
         </p>

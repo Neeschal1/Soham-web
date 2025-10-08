@@ -10,12 +10,14 @@ const Reflection = () => {
     <div className="w-full mt-16">
       {/* ---------- MOBILE VIEW (below 640px) ---------- */}
       <div className="sm:hidden flex flex-col px-6 py-8 text-center">
-        <h3
-          className="bg-[#F9F8FF] py-2 px-8 rounded-full mb-4"
-          style={Fonts.poppins.regular}
-        >
-          OUR MOTIVE
-        </h3>
+        <div className="flex justify-center">
+          <h3
+            className="bg-[#F9F8FF] py-2 px-8 rounded-full mb-4"
+            style={Fonts.poppins.regular}
+          >
+            OUR MOTIVE
+          </h3>
+        </div>
 
         <h1 style={Fonts.poppins.medium} className="text-2xl mb-3">
           Your Life for <br /> Greater Self Reflection
@@ -43,7 +45,10 @@ const Reflection = () => {
               <h1 style={Fonts.poppins.medium} className="text-lg mb-1">
                 Expert Instructors
               </h1>
-              <p style={Fonts.poppins.regular} className="text-xs text-gray-600">
+              <p
+                style={Fonts.poppins.regular}
+                className="text-xs text-gray-600"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -61,7 +66,10 @@ const Reflection = () => {
               <h1 style={Fonts.poppins.medium} className="text-lg mb-1">
                 Transformative Power of Meditation
               </h1>
-              <p style={Fonts.poppins.regular} className="text-xs text-gray-600">
+              <p
+                style={Fonts.poppins.regular}
+                className="text-xs text-gray-600"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -79,7 +87,10 @@ const Reflection = () => {
               <h1 style={Fonts.poppins.medium} className="text-lg mb-1">
                 Welcoming Community
               </h1>
-              <p style={Fonts.poppins.regular} className="text-xs text-gray-600">
+              <p
+                style={Fonts.poppins.regular}
+                className="text-xs text-gray-600"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
@@ -195,7 +206,7 @@ const Reflection = () => {
       </div>
 
       {/* ---------- DESKTOP VIEW (≥1280px) ---------- */}
-      <div className="hidden lg:flex flex-row px-20 py-14 items-center justify-between">
+      <div className="hidden lg:flex flex-row px-10 py-14 items-center justify-between">
         {/* Text Part */}
         <div className="w-1/2 flex flex-col gap-12">
           <div>
@@ -224,7 +235,7 @@ const Reflection = () => {
 
         {/* Image */}
         <div
-          className="w-[550px] h-[600px] rounded-2xl bg-cover bg-center"
+          className="w-[600px] h-[700px] rounded-2xl bg-cover bg-center"
           style={{ backgroundImage: `url(${Reflectionimg})` }}
         />
       </div>
@@ -267,7 +278,10 @@ const ReflectionDetails = () => {
               <h1 style={Fonts.poppins.medium} className="text-2xl mb-1">
                 {item.title}
               </h1>
-              <p style={Fonts.poppins.regular} className="text-sm text-gray-600">
+              <p
+                style={Fonts.poppins.regular}
+                className="text-sm text-gray-600"
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever.
