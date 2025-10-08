@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Fonts from "../../utils/fontsconfig";
 import Nikki from "../../assets/images/nikki.png";
 import Braun from "../../assets/images/braun.png";
@@ -29,8 +29,35 @@ const instructor_detail = [
 ];
 
 const Instructors = () => {
+  const [visible, setVisible] = useState(false);
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const section = scrollRef.current;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisible(true);
+            observer.unobserve(section);
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (section) observer.observe(section);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="w-full mt-10">
+    <div
+      ref={scrollRef}
+      className={`w-full mt-10 transition-all duration-700 ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
       {/* ----------- MOBILE VIEW (below 640px) ----------- */}
       <div className="block items-center w-full justify-center flex-col sm:hidden px-4 py-8 text-center">
         <div className="flex justify-center">
@@ -57,6 +84,7 @@ const Instructors = () => {
               style={{ backgroundImage: `url(${item.img})` }}
               className="relative w-full h-[400px] rounded-xl bg-cover bg-center overflow-hidden hover:scale-105 transition-transform duration-500"
             >
+              <img src={item.img} alt={item.name} className="hidden" />
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
                 <h1 style={Fonts.poppins.medium} className="text-white text-lg">
                   {item.name}
@@ -97,6 +125,7 @@ const Instructors = () => {
               style={{ backgroundImage: `url(${item.img})` }}
               className="relative w-[300px] h-[480px] rounded-xl bg-cover bg-center overflow-hidden hover:scale-105 transition-transform duration-500"
             >
+              <img src={item.img} alt={item.name} className="hidden" />
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
                 <h1 style={Fonts.poppins.medium} className="text-white text-xl">
                   {item.name}
@@ -137,11 +166,9 @@ const Instructors = () => {
               style={{ backgroundImage: `url(${item.img})` }}
               className="relative w-[360px] h-[550px] rounded-xl bg-cover bg-center overflow-hidden hover:scale-105 transition-transform duration-500"
             >
+              <img src={item.img} alt={item.name} className="hidden" />
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
-                <h1
-                  style={Fonts.poppins.medium}
-                  className="text-white text-2xl"
-                >
+                <h1 style={Fonts.poppins.medium} className="text-white text-2xl">
                   {item.name}
                 </h1>
                 <h3
@@ -158,8 +185,7 @@ const Instructors = () => {
 
       {/* ----------- DESKTOP VIEW (≥1280px) ----------- */}
       <div className="hidden lg:block px-20 py-14 text-center items-center">
-
-        <div className="flex flex-1 items-center justify-center">
+        <div className="flex items-center justify-center">
           <h3
             className="bg-[#F9F8FF] py-2 px-12 rounded-full text-lg"
             style={Fonts.poppins.regular}
@@ -176,18 +202,16 @@ const Instructors = () => {
           of experience, passion, and knowledge to help you grow and learn.
         </p>
 
-        <div className="grid grid-cols-3 gap-25 justify-items-center">
+        <div className="grid grid-cols-3 gap-[100px] justify-items-center">
           {instructor_detail.map((item) => (
             <div
               key={item.id}
               style={{ backgroundImage: `url(${item.img})` }}
               className="relative w-[430px] h-[590px] rounded-xl bg-cover bg-center overflow-hidden hover:scale-105 transition-transform duration-500"
             >
+              <img src={item.img} alt={item.name} className="hidden" />
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
-                <h1
-                  style={Fonts.poppins.medium}
-                  className="text-white text-2xl"
-                >
+                <h1 style={Fonts.poppins.medium} className="text-white text-2xl">
                   {item.name}
                 </h1>
                 <h3

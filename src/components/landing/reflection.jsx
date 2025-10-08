@@ -52,7 +52,7 @@ const Reflection = () => {
         <div className="flex flex-col gap-10 text-left">
           {/* 1 */}
           <div className="flex flex-row gap-3">
-            <div className="p-4 rounded-2xl bg-[#A973C5] flex items-center justify-center">
+            <div className="p-4 rounded-2xl bg-[#A973C5] h-5/12 flex items-center justify-center">
               <GrUserExpert size={22} color="white" />
             </div>
             <div>
@@ -73,7 +73,7 @@ const Reflection = () => {
 
           {/* 2 */}
           <div className="flex flex-row gap-3">
-            <div className="p-4 rounded-2xl bg-[#88E566] flex items-center justify-center">
+            <div className="p-4 rounded-2xl bg-[#88E566] flex h-5/12 items-center justify-center">
               <GiMeditation size={22} color="white" />
             </div>
             <div>
@@ -94,7 +94,7 @@ const Reflection = () => {
 
           {/* 3 */}
           <div className="flex flex-row gap-3">
-            <div className="p-4 rounded-2xl bg-[#4FCBCF] flex items-center justify-center">
+            <div className="p-4 rounded-2xl bg-[#4FCBCF] h-5/12 flex items-center justify-center">
               <RiUserCommunityFill size={22} color="white" />
             </div>
             <div>

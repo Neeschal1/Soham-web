@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Backgroundimage from "../../assets/images/hero_background.png";
 import Mobileherobg from "../../assets/images/mobileherobg.jpg";
 import Mobilelogo from "../../assets/images/mobilelogo.png";
-import Logo from "../../assets/images/logo.png";
+import Lotus from "../../assets/images/lotus.png";
 import Users from "../../assets/images/users.png";
 import Navbar from "../../constant/navbar";
 import Fonts from "../../utils/fontsconfig";
@@ -20,7 +20,7 @@ const Hero = () => {
       >
         {/* Top Navbar */}
         <div className="flex justify-between items-center">
-          <img className="h-10 w-36" src={Logo} alt="Logo" />
+          <div style={{backgroundImage: `url(${Lotus})`}} className="flex h-10 w-12"/>
           <button onClick={() => setMenu(!menu)}>
             <IoMenu size={28} color="white" />
           </button>

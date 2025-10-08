@@ -9,7 +9,8 @@ const Faqs = () => {
 
   const qunandanswers = [
     {
-      question: "What is meditation, and why is it considered important for mental health?",
+      question:
+        "What is meditation, and why is it considered important for mental health?",
       answer:
         "Meditation is a mental practice in which a person uses techniques such as focusing the mind on a particular object, thought, or activity to achieve a mentally clear, emotionally calm, and stable state. It is considered important for mental health because it helps reduce stress, anxiety, and negative emotions. Scientific studies have shown that regular meditation can improve brain function, enhance focus, and increase emotional resilience, allowing people to cope better with challenges in daily life.",
     },
@@ -32,7 +33,7 @@ const Faqs = () => {
       question: "How does meditation affect the brain and nervous system?",
       answer:
         "Meditation causes measurable changes in the brain. It increases grey matter, which is linked to memory, decision-making, and learning, and strengthens the prefrontal cortex, which is responsible for focus and planning. Simultaneously, it reduces activity in the amygdala, the part of the brain associated with fear, stress, and emotional reactions. Meditation also slows down the nervous system, lowers heart rate, and reduces cortisol, the stress hormone.",
-    }
+    },
   ];
 
   const toggleOpen = (index) => {
@@ -59,16 +60,16 @@ const Faqs = () => {
   }, []);
 
   return (
-    <section
+    <div
       ref={scrollRef}
-      className={`flex flex-col md:flex-row items-center justify-between gap-20 py-20 lg:px-20 bg-white transition-all duration-700 ${
+      className={`flex flex-col md:flex-row mb-20 items-center justify-between gap-15  lg:px-20 bg-white transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
       {/* LEFT SIDE - Heading + Image */}
-      <div className="w-full md:w-5/12 flex flex-col items-start gap-8">
+      <div className=" w-full md:w-6/12 flex flex-col items-start gap-8">
         {/* Heading Section */}
-        <div className="flex flex-col gap-3 w-full items-center">
+        <div className="lg:flex lg:flex-col lg:gap-3 lg:w-full lg:items-start sm:items-center">
           <h3
             className="bg-[#F9F8FF] py-2 px-4 rounded-full w-fit"
             style={Fonts.poppins.regular}
@@ -87,17 +88,17 @@ const Faqs = () => {
             className="text-gray-600 mt-2 max-w-md"
             style={Fonts.poppins.regular}
           >
-            Explore common questions people have when beginning their
-            meditation practice and discover how it can transform your life.
+            Explore common questions people have when beginning their meditation
+            practice and discover how it can transform your life.
           </p>
         </div>
 
         {/* Image Below Heading */}
-        <div className="w-full flex justify-center items-center">
+        <div className="w-full flex justify-center items-center ">
           <img
             src={Faqimg}
             alt="FAQ Illustration"
-            className="rounded-3xl w-full h-[50vh] object-cover shadow-lg hover:scale-105 transition-transform duration-700"
+            className="rounded-3xl w-full h-[60vh] object-cover shadow-lg hover:scale-105 transition-transform duration-700 "
           />
         </div>
       </div>
@@ -145,7 +146,7 @@ const Faqs = () => {
       {/* Responsive Styling */}
       <style jsx>{`
         @media (max-width: 768px) {
-          section {
+          div[ref] {
             flex-direction: column;
             text-align: center;
             padding: 2rem 1.5rem;
@@ -163,7 +164,7 @@ const Faqs = () => {
           }
         }
       `}</style>
-    </section>
+    </div>
   );
 };
 
