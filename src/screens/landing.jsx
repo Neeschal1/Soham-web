@@ -15,7 +15,7 @@ const Landing = () => {
         <Hero />
         <Moreaboutus />
         <div className="flex flex-col gap-10">
-          {/* <Journey /> */}
+          <Journey />
           <Download />
           <Reflection />
           <Instructors />
