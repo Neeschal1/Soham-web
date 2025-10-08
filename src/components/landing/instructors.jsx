@@ -69,13 +69,19 @@ const Instructors = () => {
           </h3>
         </div>
 
-        <h1 style={Fonts.poppins.medium} className="text-2xl mt-4 mb-2">
-          Meet our Expert Instructor
-        </h1>
-        <p style={Fonts.poppins.light} className="text-sm text-gray-600 mb-8">
-          Discover the experts guiding your journey. Our instructors bring years
-          of experience, passion, and knowledge to help you grow and learn.
-        </p>
+        <div className="mb-10">
+          <h1 style={Fonts.poppins.medium} className="text-2xl mt-4 mb-2">
+            Meet our Expert Instructor
+          </h1>
+          <p
+            className="text-gray-600 mt-2 max-w-md  text-center"
+            style={Fonts.poppins.regular}
+          >
+            Discover the experts guiding your journey. Our instructors bring
+            years of experience, passion, and knowledge to help you grow and
+            learn.
+          </p>
+        </div>
 
         <div className="flex flex-col items-center gap-6">
           {instructor_detail.map((item) => (
@@ -168,7 +174,10 @@ const Instructors = () => {
             >
               <img src={item.img} alt={item.name} className="hidden" />
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
-                <h1 style={Fonts.poppins.medium} className="text-white text-2xl">
+                <h1
+                  style={Fonts.poppins.medium}
+                  className="text-white text-2xl"
+                >
                   {item.name}
                 </h1>
                 <h3
@@ -211,7 +220,10 @@ const Instructors = () => {
             >
               <img src={item.img} alt={item.name} className="hidden" />
               <div className="absolute bottom-0 w-full p-4 bg-black/40 backdrop-blur-sm">
-                <h1 style={Fonts.poppins.medium} className="text-white text-2xl">
+                <h1
+                  style={Fonts.poppins.medium}
+                  className="text-white text-2xl"
+                >
                   {item.name}
                 </h1>
                 <h3

@@ -21,13 +21,18 @@ const Reflection = () => {
           </h3>
         </div>
 
-        <h1 style={Fonts.poppins.medium} className="text-2xl mb-3">
-          Your Life for <br /> Greater Self Reflection
-        </h1>
-        <p style={Fonts.poppins.light} className="text-sm text-gray-600 mb-8">
-          Pause, reflect, and gain clarity to understand yourself better and
-          make mindful choices.
-        </p>
+        <div className="mb-10">
+          <h1 style={Fonts.poppins.medium} className="text-2xl mb-3">
+            Your Life for Greater Self Reflection
+          </h1>
+          <p
+            className="text-gray-600 mt-2 max-w-md  text-center"
+            style={Fonts.poppins.regular}
+          >
+            Pause, reflect, and gain clarity to understand yourself better and
+            make mindful choices.
+          </p>
+        </div>
 
         <div className="flex justify-center mb-10">
           <div
@@ -125,7 +130,10 @@ const Reflection = () => {
         <h1 style={Fonts.poppins.medium} className="text-3xl mb-3">
           Your Life for <br /> Greater Self Reflection
         </h1>
-        <p style={Fonts.poppins.light} className="text-base text-gray-600 mb-8">
+        <p
+          style={Fonts.poppins.regular}
+          className="text-base text-gray-600 mb-8"
+        >
           Pause, reflect, and gain clarity to understand yourself better and
           make mindful choices.
         </p>
@@ -198,7 +206,7 @@ const Reflection = () => {
               Your Life for <br /> Greater Self Reflection
             </h1>
             <p
-              style={Fonts.poppins.light}
+              style={Fonts.poppins.regular}
               className="text-lg text-gray-600 mb-6"
             >
               Pause, reflect, and gain clarity to understand yourself better and
@@ -234,7 +242,7 @@ const Reflection = () => {
               Your Life for <br /> Greater Self Reflection
             </h1>
             <p
-              style={Fonts.poppins.light}
+              style={Fonts.poppins.regular}
               className="text-lg text-gray-600 mb-6"
             >
               Pause, reflect, and gain clarity to understand yourself better and

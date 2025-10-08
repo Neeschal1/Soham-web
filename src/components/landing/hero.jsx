@@ -20,7 +20,10 @@ const Hero = () => {
       >
         {/* Top Navbar */}
         <div className="flex justify-between items-center">
-          <div style={{backgroundImage: `url(${Lotus})`}} className="flex h-10 w-12"/>
+          <div
+            style={{ backgroundImage: `url(${Lotus})` }}
+            className="flex h-10 w-12"
+          />
           <button onClick={() => setMenu(!menu)}>
             <IoMenu size={28} color="white" />
           </button>
@@ -84,15 +87,21 @@ const Hero = () => {
         )}
 
         {/* Hero Content */}
-        <div className="flex flex-col items-center text-center gap-5 px-5">
-          <h1 className="text-5xl text-white font-medium">
-            Meditation for mind, body,
-            <br />
-            and soul with silent strength.
-          </h1>
-          <h3 className="text-sm text-white/50 pt-3 font-normal">
-            We help you rediscover your inner peace through mindful practices.
-          </h3>
+        <div className="flex flex-col items-center text-center gap-8 px-5">
+          <div>
+            <h1
+              style={{ fontSize: 40, lineHeight: 0.9, ...Fonts.poppins.medium }}
+              className="text-white font-medium"
+            >
+              Meditation for mind, body, and soul with silent strength.
+            </h1>
+            <h3
+              style={Fonts.poppins.regular}
+              className="text-sm text-white/80 pt-3 font-normal mt-[-5]"
+            >
+              We help you rediscover your inner peace through mindful practices.
+            </h3>
+          </div>
           <button
             style={Fonts.poppins.regular}
             className="bg-[#00DADA] py-3 px-10 rounded-full text-white hover:bg-black duration-500"
