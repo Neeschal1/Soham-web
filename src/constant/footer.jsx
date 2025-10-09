@@ -159,7 +159,7 @@ const Footer = () => {
 
           {/* Developer Credit */}
           <p style={Fonts.poppins.medium} className="text-center text-[#ffffff]">
-            Designed with ❤️ by{" "}
+            Designed and Developed with ❤️ by{" "}
             <a
               href="https://www.facebook.com/nischal.pokharel.598234" 
               target="_blank"
