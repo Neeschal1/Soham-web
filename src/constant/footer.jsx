@@ -24,7 +24,7 @@ const supportLinks = [
 const Footer = () => {
   return (
     <div className="bg-black text-white w-full">
-      <div className="px-4 sm:px-6 md:px-10 lg:px-20 py-10">
+      <div className="px-4 sm:px-6 md:px-10 lg:px-15 py-10">
         {/* Newsletter Section */}
         <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
           {/* Left Content */}
@@ -94,14 +94,14 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div>
+          <div className="flex items-center flex-col">
             <h3
               style={Fonts.poppins.medium}
               className="text-base font-semibold mb-4"
             >
               Social Media
             </h3>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-2 text-center">
               {socialLinks.map((link, index) => (
                 <li
                   key={index}
@@ -119,14 +119,14 @@ const Footer = () => {
           </div>
 
           {/* Support */}
-          <div>
+          <div className="flex items-end flex-col">
             <h3
               style={Fonts.poppins.medium}
               className="text-base font-semibold mb-4"
             >
               Support
             </h3>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex text-right flex-col gap-2">
               {supportLinks.map((link, index) => (
                 <li
                   key={index}
