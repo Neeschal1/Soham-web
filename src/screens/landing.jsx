@@ -20,6 +20,7 @@ const Landing = () => {
           <Reflection />
           <Instructors />
           <Faqs />
+          <h1>User's reviews and suggestions</h1>
         </div>
         <Footer />
       </div>
