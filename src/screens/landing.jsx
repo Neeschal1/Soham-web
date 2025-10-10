@@ -7,6 +7,7 @@ import Download from "../components/landing/download_our_app";
 import Faqs from "../components/landing/faqs";
 import Instructors from "../components/landing/instructors";
 import Reflection from "../components/landing/reflection";
+import Userreview from "../components/landing/user_review";
 
 const Landing = () => {
   return (
@@ -20,7 +21,7 @@ const Landing = () => {
           <Reflection />
           <Instructors />
           <Faqs />
-          <h1>User's reviews and suggestions</h1>
+          <Userreview />
         </div>
         <Footer />
       </div>
