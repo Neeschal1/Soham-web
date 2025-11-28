@@ -8,10 +8,8 @@ const Download = () => {
   return (
     <div className="flex justify-center items-center py-10 px-4 bg-black m-15 rounded-3xl">
       <div className="relative bg-black w-full max-w-7xl rounded-3xl flex flex-col lg:flex-row items-center p-6 lg:p-12  ">
-
         {/* Stats & Buttons */}
         <div className="flex flex-col lg:flex-row w-full lg:gap-20 gap-10 items-center justify-center lg:pr-[520px]">
-          
           {/* Android */}
           <div className="flex flex-col items-center justify-center gap-6 flex-1">
             <div className="flex flex-col items-center">
@@ -36,7 +34,15 @@ const Download = () => {
               Every morning, people take time to relax and chill.
             </h3>
 
-            <button className="p-0 bg-transparent border-0 mt-4 cursor-pointer">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://play.google.com/store/apps/details?id=com.jackmanbegins.mfreedom.merojyotish&pcampaignid=web_share",
+                  "_blank"
+                )
+              }
+              className="p-0 bg-transparent border-0 mt-4 cursor-pointer"
+            >
               <img
                 src={playstore}
                 alt="Play Store"
@@ -69,10 +75,18 @@ const Download = () => {
               Each day, more than 20 minutes are spent in meditation.
             </h3>
 
-            <button className="p-0 bg-transparent border-0 mt-4 cursor-pointer">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://apps.apple.com/us/app/mero-jyotish/id1473215421",
+                  "_blank"
+                )
+              }
+              className="p-0 bg-transparent border-0 mt-4 cursor-pointer"
+            >
               <img
                 src={appstore}
-                alt="App Store"
+                alt="Play Store"
                 className="w-40 sm:w-56 md:w-64 lg:w-72 h-auto"
               />
             </button>
