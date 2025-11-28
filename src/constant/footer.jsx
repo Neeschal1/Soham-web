@@ -1,11 +1,11 @@
 import Fonts from "../utils/fontsconfig";
 
 const quickLinks = [
-  { name: "Home", url: "/" },
-  { name: "Meditation", url: "/" },
-  { name: "Purpose", url: "/" },
   { name: "Our Story", url: "/" },
-  { name: "About us", url: "/" },
+  { name: "Meditation", url: "/meditation" },
+  { name: "Purpose", url: "/purpose" },
+  { name: "Our Mission", url: "/ourmission" },
+  { name: "About us", url: "/aboutus" },
 ];
 
 const socialLinks = [

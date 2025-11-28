@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import Fonts from "../../utils/fontsconfig";
+import { useNavigate } from "react-router-dom";
 
 const MoreAboutUs = () => {
+  const navigate = useNavigate()
   const scrollRef = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -50,7 +52,7 @@ const MoreAboutUs = () => {
               well-being
             </h3>
           </div>
-          <button className="bg-[#00DADA] py-3 px-6 rounded text-base text-white hover:bg-black duration-800">
+          <button onClick={()=>{navigate('/aboutus')}} className="bg-[#00DADA] py-3 px-6 rounded text-base text-white cursor-pointer hover:bg-black duration-800">
             More about us
           </button>
         </div>
@@ -104,7 +106,7 @@ const MoreAboutUs = () => {
               well-being
             </h3>
           </div>
-          <button className="bg-[#00DADA] py-4 px-10 rounded text-xl text-white hover:bg-black duration-800">
+          <button onClick={()=>{navigate('/aboutus')}} className="bg-[#00DADA] py-4 px-10 rounded text-xl text-white hover:bg-black duration-800 cursor-pointer">
             More about us
           </button>
         </div>
@@ -131,7 +133,7 @@ const MoreAboutUs = () => {
               well-being
             </h3>
           </div>
-          <button className="bg-[#00DADA] py-4 px-12 rounded text-xl text-white hover:bg-black duration-800">
+          <button onClick={()=>{navigate('/aboutus')}} className="bg-[#00DADA] py-4 px-12 rounded text-xl text-white cursor-pointer hover:bg-black duration-800">
             More about us
           </button>
         </div>

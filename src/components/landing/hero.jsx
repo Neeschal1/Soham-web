@@ -7,8 +7,11 @@ import Users from "../../assets/images/users.png";
 import Navbar from "../../constant/navbar";
 import Fonts from "../../utils/fontsconfig";
 import { IoMenu, IoClose } from "react-icons/io5";
+import { navigate } from "ionicons/icons";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate()
   const [menu, setMenu] = useState(false);
 
   return (
@@ -105,6 +108,7 @@ const Hero = () => {
           <button
             style={Fonts.poppins.regular}
             className="bg-[#00DADA] py-3 px-10 rounded-full text-white hover:bg-black duration-500"
+            onClick={()=>{navigate('/signup')}}
           >
             Try for free
           </button>
@@ -154,8 +158,9 @@ const Hero = () => {
 
               <div>
                 <button
+                  onClick={()=>{navigate('/signup')}}
                   style={Fonts.poppins.regular}
-                  className="bg-[#00DADA] py-4 px-15 rounded-full text-white hover:bg-black duration-500"
+                  className="bg-[#00DADA] py-4 px-15 rounded-full text-white hover:bg-black duration-500 cursor-pointer"
                 >
                   Try for free
                 </button>
