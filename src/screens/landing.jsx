@@ -21,7 +21,7 @@ const Landing = () => {
           <Reflection />
           <Instructors />
           <Faqs />
-          <Userreview />
+          {/* <Userreview /> */}
         </div>
         <Footer />
       </div>
