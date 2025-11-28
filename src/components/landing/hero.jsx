@@ -132,7 +132,7 @@ const Hero = () => {
           <Navbar />
 
           {/* Center contents */}
-          <div className="flex-1 flex items-center justify-start ml-15">
+          <div className="flex-1 flex items-center justify-start ml-5">
             <div className="flex flex-col gap-5">
               <div>
                 <h1
