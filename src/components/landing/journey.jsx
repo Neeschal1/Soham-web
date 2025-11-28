@@ -5,31 +5,99 @@ import { LuArrowUpRight } from "react-icons/lu";
 import Silence from "../../assets/images/silence.jpg";
 import Happy from "../../assets/images/happy.jpg";
 
+// Import your Yoga images
+import YogaDetailcard from "../../assets/images/yoga.jpg"; // Add your yoga detail image
+import YogaCard1 from "../../assets/images/yoga1.jpg"; // Add your yoga card images
+import YogaCard2 from "../../assets/images/yoga2.jpg";
+
+// Import your Relax images
+import RelaxDetailcard from "../../assets/images/relax.jpg"; // Add your relax detail image
+import RelaxCard1 from "../../assets/images/relax1.jpg"; // Add your relax card images
+import RelaxCard2 from "../../assets/images/relax2.jpg";
+
 const buttonoptions = ["Meditation", "Yoga", "Relax"];
 
-const journey_options = [
-  {
-    id: "1",
-    image: Silence,
-    title: (
-      <>
-        Embrace the <br /> silence
-      </>
-    ),
-    subtitle:
-      "Whether you're looking to manage stress, improve focus or simply find moments.",
+// Content data for each category
+const contentData = {
+  Meditation: {
+    detailCard: {
+      image: Detailcard,
+      text: "Together, let's journey towards the life of greater presence, peace and well-being.",
+    },
+    journeyCards: [
+      {
+        id: "1",
+        image: Silence,
+        title: (
+          <>
+            Embrace the <br /> silence
+          </>
+        ),
+        subtitle: "Whether you're looking to manage stress, improve focus or simply find moments.",
+      },
+      {
+        id: "2",
+        image: Happy,
+        title: "Celebrate the present moment",
+        subtitle: "From letting go of worries to building focus, or simply enjoying the moment.",
+      },
+    ],
   },
-  {
-    id: "2",
-    image: Happy,
-    title: "Celebrate the present moment",
-    subtitle:
-      "From letting go of worries to building focus, or simply enjoying the moment.",
+  Yoga: {
+    detailCard: {
+      image: YogaDetailcard,
+      text: "Transform your body and mind through ancient yoga practices designed for modern living.",
+    },
+    journeyCards: [
+      {
+        id: "1",
+        image: YogaCard1,
+        title: (
+          <>
+            Flow with <br /> strength
+          </>
+        ),
+        subtitle: "Build flexibility, strength, and balance through dynamic yoga sequences.",
+      },
+      {
+        id: "2",
+        image: YogaCard2,
+        title: "Find your center",
+        subtitle: "Connect breath with movement to create harmony between body and mind.",
+      },
+    ],
   },
-];
+  Relax: {
+    detailCard: {
+      image: RelaxDetailcard,
+      text: "Discover the art of deep relaxation and rejuvenation for your body, mind, and soul.",
+    },
+    journeyCards: [
+      {
+        id: "1",
+        image: RelaxCard1,
+        title: (
+          <>
+            Unwind and <br /> restore
+          </>
+        ),
+        subtitle: "Experience calming techniques that melt away tension and promote deep rest.",
+      },
+      {
+        id: "2",
+        image: RelaxCard2,
+        title: "Natural serenity",
+        subtitle: "Reconnect with nature's rhythms to find peace and balance in your daily life.",
+      },
+    ],
+  },
+};
 
 const Journey = () => {
   const [btn, setBtn] = useState("Meditation");
+
+  // Get current content based on selected button
+  const currentContent = contentData[btn];
 
   // Separate refs for DetailCard and JourneyCards
   const detailRef = useRef(null);
@@ -120,7 +188,7 @@ const Journey = () => {
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
           }`}
-          style={{ backgroundImage: `url(${Detailcard})` }}
+          style={{ backgroundImage: `url(${currentContent.detailCard.image})` }}
         >
           <div className="flex w-full flex-row items-center justify-between">
             <button
@@ -139,8 +207,7 @@ const Journey = () => {
               style={Fonts.poppins.regular}
               className="text-white text-center text-xl md:text-2xl"
             >
-              Together, let's journey towards the life of greater presence,
-              peace and well-being.
+              {currentContent.detailCard.text}
             </h2>
             <div className="w-full relative flex">
               <input
@@ -167,7 +234,7 @@ const Journey = () => {
               : "opacity-0 translate-y-10"
           }`}
         >
-          {journey_options.map((item) => (
+          {currentContent.journeyCards.map((item) => (
             <div
               key={item.id}
               className="h-auto lg:h-72 md:h-60 w-full rounded-3xl bg-[#F2F2F2] p-4 flex flex-col md:flex-row gap-4"
