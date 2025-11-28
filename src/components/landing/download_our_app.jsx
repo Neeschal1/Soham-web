@@ -6,7 +6,7 @@ import mockups from "../../assets/images/mobilemockups.png";
 
 const Download = () => {
   return (
-    <div className="flex justify-center items-center py-10 px-4 bg-black m-15 rounded-3xl">
+    <div className="flex justify-center items-center py-10 px-4 bg-black m-10 rounded-3xl">
       <div className="relative bg-black w-full max-w-7xl rounded-3xl flex flex-col lg:flex-row items-center p-6 lg:p-12  ">
         {/* Stats & Buttons */}
         <div className="flex flex-col lg:flex-row w-full lg:gap-20 gap-10 items-center justify-center lg:pr-[520px]">
