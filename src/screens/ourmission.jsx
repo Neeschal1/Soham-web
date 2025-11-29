@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
+import Missionhero from "../components/ourmission/hero";
 
-const Ourmission
- = () => {
+const Ourmission = () => {
   return (
-    <div>Ourmission
-        
+    <div>
+      <Missionhero />
     </div>
-  )
-}
+  );
+};
 
-export default Ourmission
+export default Ourmission;

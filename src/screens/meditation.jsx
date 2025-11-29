@@ -1,8 +1,11 @@
 import React from 'react'
+import Meditatehero from '../components/meditation/hero'
 
 const Meditation = () => {
   return (
-    <div>Meditation</div>
+    <div>
+      <Meditatehero />
+    </div>
   )
 }
 
