@@ -1,8 +1,12 @@
 import React from 'react'
+import Signupui from '../components/signup/signupui'
+
 
 const Signup = () => {
   return (
-    <div>Signup</div>
+    <div className='flex flex-1'>
+      <Signupui />
+    </div>
   )
 }
 

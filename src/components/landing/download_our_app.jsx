@@ -46,7 +46,7 @@ const Download = () => {
               <img
                 src={playstore}
                 alt="Play Store"
-                className="w-40 sm:w-56 md:w-64 lg:w-72 h-auto"
+                className="w-40 sm:w-56 md:w-64 lg:w-50 h-auto"
               />
             </button>
           </div>
@@ -86,8 +86,8 @@ const Download = () => {
             >
               <img
                 src={appstore}
-                alt="Play Store"
-                className="w-40 sm:w-56 md:w-64 lg:w-72 h-auto"
+                alt="App Store"
+                className="w-30 sm:w-30 md:w-64 lg:w-50 h-auto"
               />
             </button>
           </div>
